@@ -1,0 +1,110 @@
+body {
+  background-color: red;
+  font-family: "Roboto", "sans-serif";
+  font-size: 12px;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  background-color: #86b6f6;
+  padding-top: 10px;
+}
+
+.addBookBtn {
+  margin-left: auto;
+  padding-right: 5px;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  background-color: #eef5ff;
+  overflow-y: auto;
+  grid-gap: 15px;
+}
+
+.book-item {
+  height: 500px;
+  width: 250px;
+  font-family: "Madimi One";
+  font-size: 1rem;
+  padding: 1rem;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.15);
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  /* width: auto; */
+  /* overflow-y: auto; */
+}
+
+.book-info > div:first-child {
+  /* border-right: 1px solid black; */
+  padding-right: .5rem;
+  height: 250px;
+  width:70%;
+  
+}
+
+
+.book-item > img {
+  height: 190px;
+  /* width: auto; */
+}
+
+.book-infoBtn{
+  
+  display:flex;
+  padding: 5px;
+  /* margin-left: auto; */
+  /* margin-right: 1px; */
+  margin-top: auto;
+  justify-content: space-between;
+  /* align-self: ; */
+ 
+}
+/* .book-infoBtn > div:first-child {
+
+  margin-bottom: 30px;
+} */
+
+.book-infoBtn button{
+  /* width: 60px;
+  height:35px ; */
+  /* margin-top: 20px; */
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  background: #FFD814;
+  border: 1px solid #FCD200;
+  font-size: 11px;
+  height: 27px;
+  padding: 0 6px;
+  text-align: center;
+  font-weight: 500;
+  color: #0F1111;
+  :hover{
+      background: #F7CA00;
+      border-color: #F2C200;
+      box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+  }
+  
+}
